@@ -5,72 +5,74 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
+   [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
-        alternativas: [
+        "enunciado": "Assim que você saiu da escola, deparou-se com uma nova tecnologia que permite monitorar e otimizar o consumo de energia em sua casa. Qual o primeiro pensamento?",
+        "alternativas": [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                "texto": "Isso é incrível! Vou explorar como posso reduzir meu impacto ambiental.",
+                "afirmacao": "Ficou entusiasmado em usar a tecnologia para melhorar a eficiência energética e reduzir sua pegada ecológica."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                "texto": "Isso é complexo! Não sei como começar a usar essa tecnologia.",
+                "afirmacao": "Sentiu-se intimidado pela complexidade da tecnologia e não sabia como integrá-la em sua rotina."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
-        alternativas: [
+        "enunciado": "Com a descoberta dessa tecnologia de monitoramento de energia, seu professor de ciências decidiu criar um projeto sobre a redução de pegada ecológica usando novas tecnologias. Qual atitude você toma?",
+        "alternativas": [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                "texto": "Utiliza a tecnologia de monitoramento para coletar dados e desenvolver um projeto detalhado sobre eficiência energética.",
+                "afirmacao": "Utilizou a tecnologia para obter dados reais e criar um projeto detalhado e informativo."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                "texto": "Baseia o projeto em pesquisas sobre práticas sustentáveis e soluções tradicionais.",
+                "afirmacao": "Escolheu usar fontes de pesquisa tradicionais para desenvolver o projeto, focando em práticas sustentáveis conhecidas."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
-        alternativas: [
+        "enunciado": "Após a apresentação do projeto, a turma debateu como tecnologias sustentáveis podem impactar o futuro. Qual é a sua opinião?",
+        "alternativas": [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                "texto": "Acredito que tecnologias sustentáveis podem transformar o mercado e criar novas oportunidades.",
+                "afirmacao": "Defendeu a ideia de que tecnologias sustentáveis têm o potencial de gerar novas oportunidades e inovar o mercado."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                "texto": "Estou preocupado com os desafios financeiros e sociais que podem surgir com a adoção dessas tecnologias.",
+                "afirmacao": "Expressou preocupações sobre os desafios financeiros e sociais que podem acompanhar a adoção de tecnologias sustentáveis."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
-        alternativas: [
+        "enunciado": "Você precisa criar um cartaz para a feira de ciências sobre os benefícios da tecnologia sustentável. O que faz?",
+        "alternativas": [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                "texto": "Cria o cartaz usando um software de design gráfico.",
+                "afirmacao": "Desenvolveu o cartaz manualmente usando ferramentas de design gráfico para uma apresentação visual atraente."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                "texto": "Usa uma ferramenta de IA para gerar um cartaz visualmente atraente.",
+                "afirmacao": "Utilizou uma ferramenta de IA para criar rapidamente um cartaz visualmente impactante."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
-        alternativas: [
+        "enunciado": "Seu grupo está atrasado na entrega de um projeto de biologia sobre o impacto ambiental das tecnologias. Um membro do grupo usou IA para criar o projeto. O que você faz?",
+        "alternativas": [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                "texto": "Aceita o trabalho da IA como está, sem revisão.",
+                "afirmacao": "Decidiu aceitar o trabalho gerado pela IA sem alterações, mas percebeu que isso poderia afetar a qualidade do projeto."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                "texto": "Revisa o trabalho gerado pela IA e adiciona suas próprias observações para garantir precisão e pessoalidade.",
+                "afirmacao": "Revisou o trabalho da IA, ajustando e adicionando suas próprias ideias para garantir que o projeto fosse preciso e pessoal."
             }
         ]
-    },
-];
+    }
+]
+
 
 
 let atual = 0;
